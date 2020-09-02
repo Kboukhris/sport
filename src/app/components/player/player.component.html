@@ -1,0 +1,25 @@
+<div class="container">
+<div class="custom-media d-flex" >
+    <div class="img mr-4">
+      <img src={{data.image}} alt="Image" class="img-fluid">
+    </div>
+    
+    
+    <div class="text">
+      <span class="meta">{{data.name}}</span>
+      <h3 class="mb-4"><a href="#">{{data.date}}</a></h3>
+      <p>{{data.detail}}</p> 
+      
+      <h2>{{data.team}}</h2>
+      <div>
+        <button type="button" class="btn btn-primary" (click)='goToMatch(data.id)' >Display</button>
+        <button type="button" class="btn btn-warning">Delete</button>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+
+  

@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr class="blanc">
+            <th scope="col">id</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Actions</th>
+
+        </tr>
+    </thead>
+    <tbody class="blanc">
+        <tr *ngFor='let u of users'>
+            <th scope="row">{{u.id}}</th>
+            <td>{{u.first}}</td>
+            <td>{{u.last}}</td>
+            <td>
+                <button type="button" class="btn btn-info" (click)='goToDisplayUser(u.id)'>Display</button>
+                <button type="button" class="btn btn-danger" (click)='goToEditUser(u.id)'>Edit</button>
+                <button type="button" class="btn btn-warning" (click)='deleteUser(u.id)'>Delete</button>
+
+            </td>
+        </tr>
+       
+       
+    </tbody>
+</table>
