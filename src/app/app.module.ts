@@ -38,6 +38,7 @@ import { DisplayUserComponent } from './components/display-user/display-user.com
 import { AllUsersComponent } from './components/all-users/all-users.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { TrColorDirective } from './directives/tr-color.directive';
 
 
 
@@ -75,6 +76,7 @@ import { ReversePipe } from './pipes/reverse.pipe';
     AllUsersComponent,
     EditUserComponent,
     ReversePipe,
+    TrColorDirective,
 
   ],
   imports: [
